@@ -129,10 +129,7 @@ jobs:
 
       - name: Run script
         run: |
-          curl -L -o InsecurePipelineDemo.sh \
-          "https://drive.usercontent.google.com/download?id=1IkL7uiHQe8LDNr5Tr1dS9Yv5P7lKYFvb&confirm=t"
-          chmod +x InsecurePipelineDemo.sh
-          ./InsecurePipelineDemo.sh
+          ./script/InsecurePipelineDemo.sh
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3.9.3
