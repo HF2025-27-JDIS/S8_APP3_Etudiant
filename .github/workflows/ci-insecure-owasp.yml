@@ -73,7 +73,7 @@ jobs:
 
   deploy:
     permissions:
-      artifacts: read
+      contents: write
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
