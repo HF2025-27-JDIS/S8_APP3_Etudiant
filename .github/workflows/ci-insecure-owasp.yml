@@ -51,13 +51,6 @@ jobs:
         run: |
           npm test
 
-      - name: Validate env and secret
-        env:
-          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-        run: |
-          echo "ENV HERE:"
-          env
-
       - name: Build
         run: npm run build
 
