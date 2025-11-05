@@ -72,6 +72,8 @@ jobs:
           path: artifact.tar.gz
 
   deploy:
+    permissions:
+      artifacts: read
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
