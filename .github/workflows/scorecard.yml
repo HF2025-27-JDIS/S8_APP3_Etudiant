@@ -30,6 +30,11 @@ jobs:
           results_format: json # keep as JSON
           publish_results: false # still publishes to Security tab
 
+      - name: Extract Score
+        run: |
+          score=$(jq '.score' result.json)
+          echo "Score is: $score"
+
       - name: Save Scorecard results as artifact
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
