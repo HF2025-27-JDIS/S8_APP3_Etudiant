@@ -32,7 +32,7 @@ jobs:
 
       - name: Extract Score
         run: |
-          score=$(jq '.score' result.json)
+          score=$(jq '.score' results.json)
           echo "Score is: $score"
 
       - name: Save Scorecard results as artifact
