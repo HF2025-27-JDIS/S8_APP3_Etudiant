@@ -42,7 +42,7 @@ jobs:
           echo "Attack mode status: $STATUS"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run tests
         run: |
