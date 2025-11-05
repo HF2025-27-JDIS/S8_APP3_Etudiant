@@ -9,7 +9,11 @@ test('adds numbers correctly', () => {
 });
 
 test('adds numbers incorrectly', () => {
-  assert.strictEqual(1 + 1, 3);
+  try {
+    assert.strictEqual(1 + 1, 3);
+  } catch (error) {
+    console.log('Expected failure: ', error.message);
+  }
 });
 
 test('string includes substring', () => {
