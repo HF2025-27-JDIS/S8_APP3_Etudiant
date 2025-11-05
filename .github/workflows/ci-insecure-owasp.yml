@@ -51,7 +51,7 @@ jobs:
 
       - name: Run tests
         run: |
-          npm test || true
+          npm test
 
       - name: Validate env and secret
         env:
